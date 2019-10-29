@@ -1,4 +1,4 @@
-package nikpappas.auth
+package com.nikpappas.auth
 
 import java.io.{FileNotFoundException, IOException, InputStreamReader}
 

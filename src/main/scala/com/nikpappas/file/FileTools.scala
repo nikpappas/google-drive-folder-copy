@@ -1,4 +1,4 @@
-package nikpappas.file
+package com.nikpappas.file
 
 import java.io.IOException
 import java.util.Collections
@@ -7,11 +7,10 @@ import java.util.stream.Collectors
 import com.google.api.client.googleapis.javanet.GoogleNetHttpTransport
 import com.google.api.services.drive.Drive
 import com.google.api.services.drive.model.File
+import com.nikpappas.auth.Auth
+import com.nikpappas.core.Runner
 
 import scala.collection.JavaConverters.asScala
-import nikpappas.auth.Auth
-import nikpappas.core.Runner
-
 import scala.collection.mutable
 import scala.collection.mutable.Buffer
 

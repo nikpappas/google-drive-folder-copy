@@ -1,4 +1,4 @@
-package nikpappas.scripts
+package com.nikpappas.scripts
 
 import java.io.{FileNotFoundException, IOException, InputStreamReader}
 import java.security.GeneralSecurityException

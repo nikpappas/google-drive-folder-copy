@@ -1,11 +1,10 @@
-package nikpappas.core
-
+package com.nikpappas.core
 
 import java.util
 
 import com.google.api.services.drive.DriveScopes
-import nikpappas.auth.Auth
-import nikpappas.file.FileTools
+import com.nikpappas.auth.Auth
+import com.nikpappas.file.FileTools
 
 object Runner {
   final val FOLDER_MIME_TYPE: String = "application/vnd.google-apps.folder"

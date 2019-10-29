@@ -1,12 +1,12 @@
-package nikpappas.core
+package com.nikpappas.core
 
 import java.util
 import java.util.Collections
 
 import com.google.api.services.drive.DriveScopes
 import com.google.api.services.drive.model.File
-import nikpappas.auth.Auth
-import nikpappas.file.FileTools
+import com.nikpappas.auth.Auth
+import com.nikpappas.file.FileTools
 
 object FolderDiff {
     private val SCOPES = util.Arrays.asList(DriveScopes.DRIVE_METADATA, DriveScopes.DRIVE_FILE, DriveScopes.DRIVE)

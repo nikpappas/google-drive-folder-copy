@@ -1,13 +1,11 @@
-package nikpappas.core
+package com.nikpappas.core
 
-import java.io.{FileNotFoundException, IOException}
+import java.io.FileNotFoundException
 import java.security.GeneralSecurityException
-import java.util
-import java.util.Collections
 
+import com.google.api.services.drive.Drive
 import com.google.api.services.drive.model.File
-import com.google.api.services.drive.{Drive, DriveScopes}
-import nikpappas.file.FileTools
+import com.nikpappas.file.FileTools
 
 import scala.collection.JavaConverters.asScala
 import scala.collection.mutable.Buffer
@@ -23,8 +21,6 @@ class DriveWalker(fileTools: FileTools) {
 
 
 
-  @throws[IOException]
-  @throws[GeneralSecurityException]
   def main(): Unit = {
 //    val name = fileTools.findFile("0ByYdChTWQFFZbmtJdXdWSDFiRkE").getName
 //    System.out.println(name)
@@ -41,7 +37,6 @@ class DriveWalker(fileTools: FileTools) {
 
   }
 
-  @throws[IOException]
   def findParentId(dirName: String): String = {
     System.out.println("Fetching folder id: (%s)".format(dirName))
 
@@ -69,7 +64,6 @@ class DriveWalker(fileTools: FileTools) {
     throw new FileNotFoundException("Resource not found: " + dirName)
   }
 
-  @throws[IOException]
   def findFilesInParent(id: String): Buffer[File] = {
     val service = fileTools.getService()
 
